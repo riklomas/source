@@ -1,11 +1,13 @@
 <div class="item-page">
 
   <h1><%= @item.title %></h1>
+  
+  <%= simple_format @item.description %>
 
-  <%= image_tag @item.image.medium %>
+  <%= image_tag @item.image.url %>
 
   <p>
-    <%= link_to "Download", @item.image.url, download: true %>
+    <%= link_to "Download photo", @item.image.url, download: true %>
   </p>
 
 </div>
