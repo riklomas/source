@@ -3,3 +3,7 @@
 <p>
   <%= link_to "Back to all categories", categories_path %>
 </p>
+
+<div class="items-grid">
+  <%= render partial: "items/item", collection: @category.items.all %>
+</div>
