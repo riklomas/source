@@ -22,11 +22,16 @@
     <% end %>
     
     <header>
-      <h1>Source</h1>
+      <h1>
+        <%= link_to root_path do %>
+          Source
+        <% end %>
+      </h1>
       
       <nav>
         <% if is_logged_in? %>
           <strong><%= @current_user.username %></strong>
+          <%= link_to "All photos", items_path %>
           <%= link_to "Log out", session_path, method: :delete %>
         <% else %>
           <%= link_to "Sign up", new_user_path %>
@@ -35,7 +40,8 @@
       </nav>
     </header>
     
-    
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

@@ -1,3 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700,900');
+
+$blue: #2727e6;
+$red: #ff4141;
+$black: #222222;
+$darkgrey: #444444;
+$grey: #999999;
+$lightgrey: #d4d4d4;
+$hoverwhite: #f6f6f6;
+$white: #ffffff;
+$orange: #ffba00;
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
+  font-family: Alegreya, Times New Roman, Times, serif;
+  color: $darkgrey;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  color: $black;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 0.1em solid transparent;
+  transition: border-bottom 0.25s;
+  
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  h1 {
+    color: white;
+    margin: 0;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  nav {
+    a, strong {
+      margin: 0 0.5em 0 1em;
+    }
+  }
+}
+
+main {
+  padding: 20px;
+  
+  h1:first-child {
+    margin-top: 0;
+  }
+}
+
+form {
+  max-width: 30em;
+  
+  div.input {
+    margin: 1em 0;
+  }
+  
+  label {
+    display: block;
+    margin: 0 0 0.25em 0;
+  }
+  
+  input[type=text], input[type=email], input[type=password], textarea {
+    width: 100%;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    
+    font-family: inherit;
+    font-size: inherit;
+    
+    border: 1px solid $lightgrey;
+  }
+  
+  input[type=submit] {
+    background: $blue;
+    color: $white;
+    
+    font-family: inherit;
+    font-size: inherit;
+    appearance: none;
+    border: none;
+    
+    padding: 0.5em 1.5em 0.5em 1.5em;
+  }
+  
+  abbr {
+    color: #ff4141;
+    text-decoration: none;
+    float: right;
+  }
+}
+
+div.success, div.error {
+  padding: 5px 20px;
+  background: #ffba00;
+  color: $black;
+  font-size: 13px;
+}
+
+div.error {
+  background: $red;
+  color: $white;
+}
+
+div.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .item {
+    display: block;
+    border-bottom: none;
+    color: $darkgrey;
+    padding: 1em;
+    font-size: 14px;
+    
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: $hoverwhite;
+    }
+    
+    p {
+      margin: 0.5em 0 0 0;
+    }
+  }
+    
+    
+}
+
+div.item-page {
+  img {
+    max-width: 100%;
+  }
 }
