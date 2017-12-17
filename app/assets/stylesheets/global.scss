@@ -164,3 +164,17 @@ div.item-page {
     max-width: 100%;
   }
 }
+
+div.title {
+  display: flex;
+  justify-content: space-between;
+  
+  form {
+    width: 20em;
+  }
+  
+  input:focus {
+    border-color: $blue;
+    outline: none;
+  }
+}

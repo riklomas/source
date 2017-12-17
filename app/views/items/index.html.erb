@@ -1,8 +1,10 @@
-<h1>Photos</h1>
+<div class="title">
+  <h1>Photos</h1>
 
-<form action="">
-  <input type="text" name="q" value="<%= params[:q] %>">
-</form>
+  <form action="">
+    <input type="text" name="q" value="<%= params[:q] %>" placeholder="Search photos">
+  </form>
+</div>
 
 <div class="items-grid">
   <%= render partial: "item", collection: @items %>
