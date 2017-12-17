@@ -52,6 +52,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
 
+# add in the Stripe gem
+gem 'stripe'
+
 
 
 group :development, :test do

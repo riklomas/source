@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   # users can only make 1 session
   resource :session
   
+  # users can only edit 1 account
+  resource :account
+  
   get "about", to: "pages#about"
   
   root "pages#home"
