@@ -1,13 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  username: MyString
-  email: MyString
-  password_digest: MyString
-
-two:
-  name: MyString
-  username: MyString
-  email: MyString
-  password_digest: MyString
+rik:
+  name: Rik
+  username: riklomas
+  email: rik@superhi.com
+  password_digest: password123
+  stripe_token: tok_visa
+  subscription_plan: basic
+  
+milan:
+  name: Milan Moffatt
+  username: milan
+  email: milan@superhi.com
+  password_digest: password123
+  stripe_token: tok_chargeDeclined
+  subscription_plan: pro
+  
