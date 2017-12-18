@@ -4,7 +4,7 @@ rik:
   name: Rik
   username: riklomas
   email: rik@superhi.com
-  password_digest: password123
+  password_digest: <%= BCrypt::Password.create("password123") %>
   stripe_token: tok_visa
   subscription_plan: basic
   

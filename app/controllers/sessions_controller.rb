@@ -18,6 +18,8 @@ class SessionsController < ApplicationController
       
       redirect_to root_path
     else
+      flash[:error] = "Bad login"
+      
       render "new"
     end
     
