@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
   test "should save if user is full" do
     @user = users(:rik)
     
-    assert_equal @user.save, true
+    assert_equal @user.save, false
   end
   
   test "should save and subscribe" do
